@@ -16,7 +16,7 @@ type FieldType = "Array" | "String";
 
 interface Field {
     name: string;
-    value: any; // `any` can be replaced with a more specific type based on the value
+    value: any; 
     type: FieldType;
 }
 

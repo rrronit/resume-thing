@@ -4,7 +4,6 @@ import {
     Phone,
     Mail,
     Globe,
-    MapPin,
     Briefcase,
     GraduationCap,
     Code,
@@ -13,7 +12,6 @@ import {
     Languages,
     Heart,
     UserCheck,
-    Share,
     Share2,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";

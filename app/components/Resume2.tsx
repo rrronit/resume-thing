@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, DragEvent } from 'react';
-import { Phone, Mail, Globe, MapPin, Briefcase, GraduationCap, Code, FolderOpen, Award, Languages, Heart, UserCheck, Share2 } from 'lucide-react';
+import { Phone, Mail, Globe, Briefcase, GraduationCap, Code, FolderOpen, Award, Languages, Heart, UserCheck, Share2 } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
 // Define types for section items
@@ -149,9 +149,9 @@ const Resume2: React.FC<Resume2Props> = ({ targetRef, formData }) => {
   const getPersonalInfo = () => {
     const profile = formData.find((section) => section.name.toLowerCase() === 'profile')?.value as Section[];
     if (!profile) return { name: '', email: '', phone: '' };
-    const name = profile.find((item) => item.name?.toLowerCase() === 'name')?.value as String || '' ;
-    const email = profile.find((item) => item.name?.toLowerCase() === 'email')?.value as String || '' ;
-    const phone = profile.find((item) => item.name?.toLowerCase() === 'phone')?.value as String || '' ;
+    const name = profile.find((item) => item.name?.toLowerCase() === 'name')?.value as string || '' ;
+    const email = profile.find((item) => item.name?.toLowerCase() === 'email')?.value as string || '' ;
+    const phone = profile.find((item) => item.name?.toLowerCase() === 'phone')?.value as string || '' ;
     return { name, email, phone };
   };
 
